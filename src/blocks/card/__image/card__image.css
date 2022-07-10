@@ -1,0 +1,8 @@
+.card__image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 150px;
+  height: 220px;
+  object-fit: fill;
+}
