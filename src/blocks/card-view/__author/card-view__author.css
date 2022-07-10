@@ -1,0 +1,6 @@
+.card-view__author {
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+  text-decoration:underline;
+  padding-bottom: 15px;
+}

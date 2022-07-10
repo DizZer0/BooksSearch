@@ -1,0 +1,6 @@
+.card-view__img {
+  object-fit: contain;
+  width: 100%;
+  padding: 50px 80px;
+  background-color: rgb(240, 240, 240);
+}

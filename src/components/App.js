@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Route, Routes} from 'react-router-dom'
+import Card from './Card'
+import CardView from './СardView'
+import FormSearch from './FormSearch';
+import CardsGrid from './CardsGrid'
+import '../index.css';
 
 function App() {
+  const startIndex = useSelector( state => state.startIndex)
+
+  const isCardClick = false
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="page">
+      <header className='header'>
+        <h1 className='header__title'>Search for books</h1>
+        <FormSearch />
+        
       </header>
+      <main className="content">
+        <Routes>
+          <Route path='/' element={<CardsGrid />} />
+          <Route path='/card-view' element={<CardView />} />
+        </Routes>
+        
+      </main>
     </div>
   );
 }

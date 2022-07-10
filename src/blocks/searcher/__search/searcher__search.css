@@ -1,0 +1,7 @@
+.searcher__search {
+  color: black;
+  padding: 5px;
+  height: 100%;
+  background-color: white;
+  width: calc(100% - 85px);
+}

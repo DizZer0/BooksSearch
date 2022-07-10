@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(./vendor/normalize/normalize.css);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__title/header__title.css);
+
+@import url(./blocks/searcher/searcher.css);
+@import url(./blocks/searcher/__inputs/searcher__inputs.css);
+@import url(./blocks/searcher/__search/searcher__search.css);
+@import url(./blocks/searcher/__sorting/searcher__sorting.css);
+@import url(./blocks/searcher/__sub-btn/searcher__sub-btn.css);
+@import url(./blocks/searcher/categories/searcher__categories.css);
+@import url(./blocks/searcher/__container/searcher__container.css);
+@import url(./blocks/searcher/__select/searcher__select.css);
+
+@import url(./blocks/result/result.css);
+
+@import url(./blocks/card/card.css);
+@import url(./blocks/cards-grid/cards-grid.css);
+@import url(./blocks/card/__image/card__image.css);
+
+@import url(./blocks/more-btn/more-btn.css);
+
+/* Блок card-view
+---------------------------------------------------------------------------*/
+@import url(./blocks/card-view/card-view.css);
+@import url(./blocks/card-view/__author/card-view__author.css);
+@import url(./blocks/card-view/__categorie/card-view__categorie.css);
+@import url(./blocks/card-view/__container/card-view__container.css);
+@import url(./blocks/card-view/__description/card-view__description.css);
+@import url(./blocks/card-view/__img/card-view__img.css);
+@import url(./blocks/card-view/__title/card-view__title.css);
+
+/* Блок
+---------------------------------------------------------------------------*/
+
+/*    @import url(./blocks);      */
